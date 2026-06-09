@@ -94,8 +94,8 @@ print(df.to_string(index=False))
 # GroupBy analysis
 grouped = df.groupby("Performance Category")["Estimated Total Return"].mean()
 
-print("\nAverage Estimated Return by Performance Category")
-print(grouped)
+print("\nGroupBy Analysis Result")
+print(grouped.to_frame())
 
 import matplotlib.pyplot as plt
 
